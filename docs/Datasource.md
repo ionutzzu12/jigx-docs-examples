@@ -1,6 +1,6 @@
 # Datasource
 
-Use [Datasources](#) to access and reference data surfaced in [Data Providers](<./Data Providers.md>). This section provides examples of code snippets for working with datasources.
+Use [Datasources]() to access and reference data surfaced in [Data Providers](<./Data Providers.md>). This section provides examples of code snippets for working with datasources.
 
 | **Datasource**                   |                                                                                                                 |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------- |

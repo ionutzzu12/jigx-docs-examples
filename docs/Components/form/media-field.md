@@ -2,10 +2,10 @@
 
 The `media-field` component allows users to upload images, videos, or files, either standalone or within a form. It supports:
 
-- _Preview and thumbnails_, with built-in delete controls
-- _Single or multiple_ selection
-- _Cropping_ and _quality_ settings
-- _Size limits_ and _type filtering_
+- *Preview and thumbnails*, with built-in delete controls
+- *Single or multiple* selection
+- *Cropping* and *quality* settings
+- *Size limits* and *type filtering*
 
 :::hint{type="info"}
 The `media-field` component can be used independently or within a `form` component, each offering distinct benefits. As a standalone, it provides flexibility for isolated usage without requiring a form structure. When wrapped in a form, it leverages the form’s instanceId, enabling better coordination and usability when managing multiple fields in a jig.
@@ -45,7 +45,7 @@ When using a `media-field` in Jigx, storing and loading certain files, such as i
 
 | **Datasource**                  | **Storing data**                                                                                                                                                                                                                                                                                             | **Loading data**                                                                                                                                                                                                                                                          |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dynamic Data with Dynamic Files | Use `action.execute-entities`&#xA; with `DATA_PROVIDER_DYNAMIC`&#xA;, including the `file` property. Files are stored in Amazon S3. See [Dynamic files](https://docs.jigx.com/examples/dynamic-files) for setup.                                                                                                                                         | Files are retrieved via a &#xA;datasource query using &#xA;`DATA_PROVIDER_DYNAMIC`. The file is linked to the record and can be accessed based on query results.                                                                                                          |
+| Dynamic Data with Dynamic Files | Use `action.execute-entities`&#xA; with `DATA_PROVIDER_DYNAMIC`&#xA;, including the `file` property. Files are stored in Amazon S3. See [Dynamic files](https://docs.jigx.com/examples/dynamic-files) for setup.                                                                                             | Files are retrieved via a &#xA;datasource query using &#xA;`DATA_PROVIDER_DYNAMIC`. The file is linked to the record and can be accessed based on query results.                                                                                                          |
 | REST                            | Use `action.execute-entities` with [conversions](https://docs.jigx.com/file-handling#wHsEh) in the Jigx function to transform &#xA;`local-uri` to a format suitable for uploading to your backend (e.g., base64, buffer). Use a `create` or &#xA;`save` method in the `DATA_PROVIDER_REST` to send the data. | On loading, [convert](https://docs.jigx.com/file-handling#F6ROc) the backend format (e.g., buffer or base64) back into a &#xA;`local-uri` in the Jigx function, so the file can be displayed. Files are retrieved via a datasource query using &#xA;`DATA_PROVIDER_REST`. |
 | SQL                             | Use `action.execute-entities` with [conversions](https://docs.jigx.com/file-handling#wHsEh) in the Jigx function to transform &#xA;`local-uri` into a suitable format (e.g., base64 or buffer) for storing in the database. Use the `create` or `save` method in the `DATA_PROVIDER_SQL` to send the data.   | On load, [convert](https://docs.jigx.com/file-handling#F6ROc) the stored SQL file format back into a &#xA;`local-uri` in the Jigx function, to display in the `media-field`. Files are retrieved via a datasource query using `DATA_PROVIDER_SQL`.                        |
 | iOS device                      | When storing files from iOS, use the [convertHeicToJpg](https://docs.jigx.com/file-handling#3fzfX) property&#xA;to ensure compatibility across devices.                                                                                                                                                      | iOS reads standard file formats like JPG or PNG via &#xA;`local-uri`. If the file is HEIC, conversion may be required for cross-device viewing.                                                                                                                           |
@@ -63,7 +63,6 @@ When using a `media-field` in Jigx, storing and loading certain files, such as i
 ## Examples using media-field configurations
 
 :::::ExpandableHeading
-
 ### Restrict or filter the upload of media file types
 
 ::::VerticalSplit{layout="middle"}
@@ -72,7 +71,7 @@ This example shows a form for a new employee, configured with a `media-field` co
 :::
 
 :::VerticalSplitItem
-::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NX6I4Fub_rxtuUKR4UqHO-20250430-110158.gif" size="66" position="center" caption="Filtered file types" alt="Filtered file types" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NX6I4Fub_rxtuUKR4UqHO-20250430-110158.gif"}
+::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NX6I4Fub_rxtuUKR4UqHO-20250430-110158.gif" size="66" position="center" caption="Filtered file types" alt="Filtered file types" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-NX6I4Fub_rxtuUKR4UqHO-20250430-110158.gif" width="681" height="1377" darkWidth="681" darkHeight="1377"}
 :::
 ::::
 
@@ -176,15 +175,13 @@ actions:
           file:
             localPath: =@ctx.components.employee-contract.state.value
 ```
-
 :::
 :::::
 
 ::::ExpandableHeading
-
 ### Upload image & use freestyle cropping
 
-This component _uploads_ an image using the `mediaType: image` property. Clicking on the paperclip icon will display a menu where you can choose to upload an existing image from your device or use the camera to take a new image. After selecting or capturing the image, and cropping the image to the specified size, the media-field is first validated, then the upload button becomes enabled. Pressing the Upload image button at the bottom will trigger an action to create an entry with the image.
+This component *uploads* an image using the `mediaType: image` property. Clicking on the paperclip icon will display a menu where you can choose to upload an existing image from your device or use the camera to take a new image. After selecting or capturing the image, and cropping the image to the specified size, the media-field is first validated, then the upload button becomes enabled. Pressing the Upload image button at the bottom will trigger an action to create an entry with the image.
 
 **Examples:**
 See the full example in [GitHub](https://github.com/jigx-com/jigx-samples/blob/main/quickstart/jigx-samples/jigs/jigx-components/media-field/media-field-image.jigx).
@@ -233,12 +230,10 @@ actions:
           onSuccess:
             type: action.go-back
 ```
-
 :::
 ::::
 
 ::::ExpandableHeading
-
 ### Upload multiple files
 
 In this example we set the `isMultiple` property to `true` which allows for the selection of multiple media to be uploaded and `MediaType` to `any` which caters for images, videos and documents. The selected media display as thumbnails at the bottom of the modal. Discard media by pressing on the thumbnail, the media is deleted.
@@ -315,12 +310,10 @@ datasources:
          '$.scenery'
         FROM [default/hike]
 ```
-
 :::
 ::::
 
 ::::ExpandableHeading
-
 ### Upload video
 
 In this example multiple videos are uploaded, using the `mediaType: video` and `isMultiple: true` properties. Select videos from the library or record videos to be uploaded. Tap the + icon in the bottom left corner to add multiple videos. The `execute-entities` action uploads the videos and the metadata configured under `data` to the required datasource.
@@ -383,12 +376,10 @@ actions:
           onSuccess:
             type: action.go-back
 ```
-
 :::
 ::::
 
 ::::ExpandableHeading
-
 ### Upload image or video
 
 In this example multiple images and videos are uploaded, using the `mediaType: imageAndVideo` and `isMultiple: true` properties. Select images and videos from the library, take a picture or record videos to be uploaded. Tap the + icon in the bottom left corner to add multiple images and videos. The `execute-entities` action uploads the images, videos and metadata to the required datasource.
@@ -456,14 +447,12 @@ actions:
           onSuccess:
             type: action.go-back
 ```
-
 :::
 ::::
 
 ## Example using the media-field in an action
 
 ::::ExpandableHeading
-
 ### Use open-media-picker action to capture an image
 
 In this example, the button opens the media-picker. The configuration is set to take a picture or choose from a library. The image is saved to the local database.
@@ -541,14 +530,12 @@ the action's output when saved as data.
               #image file and the id.
               data: =@ctx.actions.job-photo.outputs.newItems
 ```
-
 :::
 ::::
 
 ## Examples of saving & loading media-field as data
 
 :::::ExpandableHeading
-
 ### Upload image using Dynamic files
 
 ::::VerticalSplit{layout="middle"}
@@ -557,7 +544,7 @@ In this example, an expense claim form allows you to capture expense details and
 :::
 
 :::VerticalSplitItem
-::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-uCb0bqIVvxwoDdMihP0My-20250519-074426.gif" size="66" position="center" caption="Upload file" alt="Upload file" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-uCb0bqIVvxwoDdMihP0My-20250519-074426.gif"}
+::Image[]{src="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-uCb0bqIVvxwoDdMihP0My-20250519-074426.gif" size="66" position="center" caption="Upload file" alt="Upload file" signedSrc="https://archbee-image-uploads.s3.amazonaws.com/0TQnKgJpsWhT3gQzQOhdY-uCb0bqIVvxwoDdMihP0My-20250519-074426.gif" width="681" height="1377" darkWidth="681" darkHeight="1377"}
 :::
 ::::
 
@@ -630,12 +617,10 @@ actions:
           file:
             localPath: =@ctx.components.expensefile.state.value
 ```
-
 :::
 :::::
 
 :::::ExpandableHeading
-
 ### Upload images using REST&#x20;
 
 ::::VerticalSplit{layout="middle"}
@@ -795,12 +780,10 @@ conversions:
     # by converting the the image to JPG.
     convertHeicToJpg: true
 ```
-
 :::
 :::::
 
 ::::ExpandableHeading
-
 ### Use intialValue to show multiple images using REST
 
 This example shows how multiple images can be loaded in the media-field using the `intialValue` property. Take note of the following configuration:
@@ -1020,12 +1003,10 @@ conversions:
     # by converting the the image to JPG.
     convertHeicToJpg: true
 ```
-
 :::
 ::::
 
 ::::ExpandableHeading
-
 ### Convert files in SQL function
 
 Jigx stores files as local files on the device and returns the file's URI as the default value. When saving these files to a datasource, you must convert files from the local-uri to base64, data-uri, or buffer. The opposite is true when handling the files returned from the datasource, you need to convert them from their saved state (base64, data-uri, or buffer) to a local-uri. In this example we upload a profile photo and convert from local-uri on the device to buffer for storage in SQL and then get the photo back from SQL and convert it from buffer to local-uri to display the photo as an avatar in a list. See [File handling](https://docs.jigx.com/file-handling) for more information.
@@ -1271,12 +1252,12 @@ conversions:
     from: local-uri
     to: buffer
 ```
-
 :::
 ::::
 
 ## See also
 
-- [Upload product images (POST)](<./../../Data Providers/REST/Create an app using REST APIs/Upload product images _POST_.md>)
+- <a href="./../../Data Providers/REST/Create an app using REST APIs/Upload product images _POST_.md" target="_blank">Upload product images (POST)</a>
 - [File handling](https://docs.jigx.com/file-handling)
 - [State](https://docs.jigx.com/state)
+
