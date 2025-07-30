@@ -1,14 +1,15 @@
 # Overview
 
 :::hint{type="danger"}
-<a href="./Datasource.md" target="_blank">Datasource</a>&#x20;
+[./Datasource.md](./Datasource.md)Datasource&#x20;
 :::
+
+[Overview]()&#x20;
 
 Welcome to the reference documentation for Jigx. This guide provides detailed information on the properties, actions, and states with practical code examples to help you effectively utilize our schema. This reference content is designed to be a comprehensive resource for all your needs, covering:
 
 |   |   |
 | - | - |
-|   |   |
 |   |   |
 |   |   |
 |   |   |
