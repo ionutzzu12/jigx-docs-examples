@@ -4,7 +4,6 @@ Welcome to the reference documentation for Jigx. This guide provides detailed in
 
 <a href="" target="_blank">wowoww</a>
 
-[Alup Igus ]()wowoww
 
 |  bla                                  |   |   |
 | ------------------------------------- | - | - |
