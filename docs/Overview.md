@@ -6,9 +6,6 @@
 
 Welcome to the reference documentation for Jigx. This guide provides detailed information on the properties, actions, and states with practical code examples to help you effectively utilize our schema. This reference content is designed to be a comprehensive resource for all your needs, covering:
 
-|   |   |
-| - | - |
-
 Our schema includes various properties that define the structure and characteristics of data entities. Each property is documented with its name, type, allowable values, and detailed description. This section ensures you have a clear understanding of how to use each property to successfully create a Jigx App.
 
 We have included practical code examples to help you implement and integrate these properties, actions, and components. These examples demonstrate common use cases and best practices, helping you quickly get started and avoid common pitfalls.
