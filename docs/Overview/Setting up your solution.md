@@ -4,6 +4,12 @@ With the sample solution in your possession, you are now equipped with all the n
 
 [Setting up your solution](./#assigning-users-to-the-solution)&#x20;
 
+[Setting up your solution]()&#x20;
+
+[bla](./#assigning-users-to-the-solution)&#x20;
+
+<a href="./#assigning-users-to-the-solution" target="_blank">bla</a>&#x20;
+
 ### Publishing and using the sample solution
 
 To see the samples in the Jigx App, and experience the functionality first-hand, you must first publish the solution:
