@@ -2,13 +2,19 @@
 
 With the sample solution in your possession, you are now equipped with all the necessary tools to assist you on your journey toward becoming an extraordinary Jigx Builder.
 
-[Setting up your solution](./#assigning-users-to-the-solution)&#x20;
+<a href="./#assigning-users-to-the-solution" target="_blank">Setting up your solution</a>&#x20;
 
 [Setting up your solution]()&#x20;
 
-[bla](./#assigning-users-to-the-solution)&#x20;
+[./#assigning-users-to-the-solution]()Setting up your solution&#x20;
 
-<a href="./#assigning-users-to-the-solution" target="_blank">bla</a>&#x20;
+| [form](./../Components/form.md)  |   |   |
+| -------------------------------- | - | - |
+|                                  |   |   |
+|                                  |   |   |
+|                                  |   |   |
+
+
 
 ### Publishing and using the sample solution
 
