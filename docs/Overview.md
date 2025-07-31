@@ -4,17 +4,12 @@
 [./Datasource.md](./Datasource.md)Datasource&#x20;
 :::
 
-[Overview]()&#x20;
-
-
-
 Welcome to the reference documentation for Jigx. This guide provides detailed information on the properties, actions, and states with practical code examples to help you effectively utilize our schema. This reference content is designed to be a comprehensive resource for all your needs, covering:
 
 # bla
 
 |   |   |
 | - | - |
-|   |   |
 
 Our schema includes various properties that define the structure and characteristics of data entities. Each property is documented with its name, type, allowable values, and detailed description. This section ensures you have a clear understanding of how to use each property to successfully create a Jigx App.
 
