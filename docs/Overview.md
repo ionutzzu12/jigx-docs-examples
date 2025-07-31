@@ -6,71 +6,15 @@
 
 Welcome to the reference documentation for Jigx. This guide provides detailed information on the properties, actions, and states with practical code examples to help you effectively utilize our schema. This reference content is designed to be a comprehensive resource for all your needs, covering:
 
-
-
-- ~~The world is flat.~~ We now know that the world is round. This text is red!
-
-[ starts with link ](https://flaviocopes.com/mysql-how-to-install) :
-
 <a href="" target="_blank">wowoww</a>
 
-<a href="" target="_blank">bla</a>&#x20;
+[Alup Igus ]()wowoww
 
-<a href="" target="_blank">bla</a>&#x20;
-
-bla&#x20;
-
-bla&#x20;
-
-\<
-
-a&#x20;
-
-href
-
-\=
-
-"asadasd"
-
-&#x20;
-
-title
-
-\=
-
-"Alup Igus no title"
-
-&#x20;
-
-target
-
-\=
-
-"\_blank"
-
-&#x20;
-
-\>
-
-&#x20;
-
-\< &#x20;
-
-&#x20;&#x20;
-
-<a href="" target="_blank">bla</a>&#x20;
-
-<a href="" target="_blank">bla</a>&#x20;
-
-
-
-| <a href="" target="_blank">bla</a>  |   |   |
-| ----------------------------------- | - | - |
-| <a href="" target="_blank">bla</a>  |   |   |
-| <a href="" target="_blank">bla</a>  |   |   |
-|                                     |   |   |
-
-
+|  bla                                  |   |   |
+| ------------------------------------- | - | - |
+|  bla                                  |   |   |
+|  bla                                  |   |   |
+| <a href="" target="_blank">wowoww</a> |   |   |
 
 Our schema includes various properties that define the structure and characteristics of data entities. Each property is documented with its name, type, allowable values, and detailed description. This section ensures you have a clear understanding of how to use each property to successfully create a Jigx App.
 
